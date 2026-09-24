@@ -5,6 +5,7 @@ Android app that finds duplicate contacts, empty contacts, numbers missing a cou
 ## Build
 
 ```sh
+nix develop  # optional: JDK, Android SDK, adb
 ./gradlew assembleDebug
 adb install app/build/outputs/apk/debug/app-debug.apk
 ```
