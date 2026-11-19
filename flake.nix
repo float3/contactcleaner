@@ -30,6 +30,8 @@
         };
         sdk = "${android.androidsdk}/libexec/android-sdk";
       in {
+        formatter = pkgs.alejandra;
+
         devShells.default = pkgs.mkShell {
           packages = [
             android.androidsdk
